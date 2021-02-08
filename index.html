@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+    <h1>Countdown</h1>
+    <div class="contenedor">
+        <form class="formulario" id="formulario">
+            <div class="titulo">
+                <label>Titulo del Evento</label>
+                <input type="text" id="evento">
+            </div>
+            <div class="fecha">
+                <label>Fecha del Evento y Hora</label>
+                <input type="datetime-local" id="fecha" class="fecha">
+            </div>
+            <div class="boton-form">
+                <input type="submit" value="Agregar Evento" class="evento">
+            </div>
+        </form>
+        <div class="resultado">
+            <div class="nombre-evento">
+                <h2>Nombre Evento</h2>
+            </div>
+            <div class="start">
+            </div>
+            <div class="tiempos">
+                <div class="dias" id="dias">0</div>
+                <div class="horas" id="horas">0</div>
+                <div class="minutos" id="minutos">0</div>
+                <div class="segundos" id="segundos">0</div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

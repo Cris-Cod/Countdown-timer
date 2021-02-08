@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #4B5A5D;
+    width: 100%;
+    height: 100vh;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+}
+
+h1 {
+    text-align: center;
+    margin: 50px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 48px;
+    color: #1C2C34;
+}
+
+.formulario {
+    /* background-color: deepskyblue;*/
+    flex: 0 0 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario .titulo,
+.fecha,
+.hora {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px auto;
+    width: 70%;
+}
+
+.titulo label,
+.fecha label,
+.hora label,
+.boton-form {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    font-size: 22px;
+    color: #45adbd;
+    margin: 10px 0;
+}
+
+.titulo input[type="text"] {
+    border: none;
+    outline: none;
+    padding: 10px 0;
+    border-radius: 8px;
+    font-size: 20px;
+    padding-left: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.fecha input[type="datetime-local"] {
+    width: 95%;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    padding: 3px 0;
+}
+
+.boton-form input[type="submit"] {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    background-color: #1495a8;
+    color: #ffffff;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    transition: all 300ms ease;
+}
+
+.boton-form input[type="submit"]:active {
+    background-color: #ffffff;
+    color: #1495a8;
+}
+
+.resultado {
+    background-color: transparent;
+    border-radius: 15px;
+    flex: 0 0 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.nombre-evento h2 {
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 44px;
+    text-transform: uppercase;
+    color: #1495a8;
+}
+
+.tiempos {
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+    /*justify-content: space-around;*/
+}
+
+.tiempos .dias,
+.horas,
+.minutos,
+.segundos {
+    flex: 0 0 23%;
+    background-color: honeydew;
+    text-align: center;
+    line-height: 150px;
+    height: 150px;
+    border-radius: 10px;
+    font-size: 70px;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 10px;
+}
+
+.inicia {
+    font-family: 'Roboto', sans-serif;
+    font-size: 26px;
+    text-align: center;
+    color: #f00887;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
